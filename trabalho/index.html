@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h2>Formulário de Cadastro</h2>
+
+    <form action="/enviar-cadastro" method="POST">
+      
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+       
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <label>Gênero:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label>
+        <br><br>
+
+       
+        <label for="preferencias">Gostaria de receber notícias?</label>
+        <input type="checkbox" id="preferencias" name="preferencias">
+        <br><br>
+
+        
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade">
+            <option value="cidade1">Cidade 1</option>
+            <option value="cidade2">Cidade 2</option>
+            <option value="cidade3">Cidade 3</option>
+            <option value="cidade4">Cidade 4</option>
+        </select>
+        <br><br>
+
+     
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+
+
